@@ -6,14 +6,11 @@ function ProjectDetailsPage () {
   
   return (
     <div className="ProjectDetailsPage">
-      {project && (
-        <div>
-          <h1>PROJECT_TITLE_HERE</h1>
-          <p>PROJECT_DESCRIPTION_HERE</p>
-        </div>
-      )}
-      
+
       {/* ... list of all Tasks for this Project should be rendered here */}
+
+      {/* example of a single TaskCard being rendered */}
+      <TaskCard />
 
       {/* ... form for adding a new Task should be rendered here    */}
 
