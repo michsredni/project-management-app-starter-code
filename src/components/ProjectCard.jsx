@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
 
-function ProjectCard () {
+function ProjectCard (props) {
+  
+  // Paso 10: destrructurar el props
+  // Paso 11: agregar id en destructuracion
+  const {title, description, id} = props.eachProject
   
   return (
     <div className="ProjectCard card">
-      <Link to={``}>
-        <h3>PROJECT_TITLE_HERE</h3>
+      {/* Paso 12: redireccionar el link al id */}
+      <Link to={`/projects/${id}`}>
+      {/* Paso 9: agregar dentro de h3*/}
+        <h3>{title}</h3>
       </Link>
-      <p>PROJECT_DESCRIPTION_HERE</p>
+      <p>{description}</p>
     </div>
   );
 }

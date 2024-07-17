@@ -1,10 +1,15 @@
 
-function TaskCard() {
+function TaskCard(props) {
+
+  // Paso 18: destrructurar el props
+  const {title, description} = props.eachTask
+  // Paso 19: ir a ProjectDetailsPage
+  
     return (
       <div className="TaskCard card">
-        <h3>TASK_TITLE_HERE</h3>
+        <h3>{title}</h3>
         <h4>Description:</h4>
-        <p>TASK_DESCRIPTION_HERE</p>
+        <p>{description}</p>
       </div>
     );
   }
