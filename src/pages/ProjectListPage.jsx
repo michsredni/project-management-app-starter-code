@@ -23,7 +23,7 @@ function ProjectListPage() {
       setProjects(response.data)
     })
     .catch((error) => {
-      console.loge(error)
+      console.log(error)
     })
 
   }, []) //se ejecuta cuando el componente haya sido creado correctamente (ComponentDidMount)

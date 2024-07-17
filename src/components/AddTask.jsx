@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
-function AddTask(props) {
+function aAddTask(props) {
 
   // Paso 31:
   const params = useParams()
@@ -35,7 +35,7 @@ function AddTask(props) {
       // Paso 36: ir a ProjectDetailsPage
       props.getData()
     } catch (error) {
-      
+      console.log(error)
     }
   };
   
