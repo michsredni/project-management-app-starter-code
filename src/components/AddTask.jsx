@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 
-function aAddTask(props) {
+function AddTask(props) {
 
   // Paso 31:
   const params = useParams()
